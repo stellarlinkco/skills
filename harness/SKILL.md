@@ -8,7 +8,7 @@ hooks:
           command: "python3 \"$HOME/.codex/skills/harness/hooks/harness-stop.py\""
           timeout: 10
         - type: command
-          command: "python3 \"$HOME/.codex/hooks/reflect-on-stop.py\""
+          command: "python3 \"$HOME/.codex/skills/harness/hooks/reflect-on-stop.py\""
           timeout: 10
   SessionStart:
     - matcher: "startup|resume|compact"

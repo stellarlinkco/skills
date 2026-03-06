@@ -53,7 +53,7 @@ cp -r harness/ ~/.codex/skills/harness/
     ├── harness-subagentstop.py       # SubagentStop hook
     ├── harness-claim.py              # 任务认领（CLI 工具）
     ├── harness-renew.py              # Lease 续租（CLI 工具）
-    └── self-reflect-stop.py          # 全部任务完成后触发自省
+    └── reflect-on-stop.py          # 全部任务完成后触发自省
 ```
 
 ### 2. 配置 `~/.codex/config.toml`
@@ -86,11 +86,11 @@ timeout = 10
 
 ```toml
 [[hooks.stop]]
-command = "python3 \"$HOME/.codex/skills/harness/hooks/self-reflect-stop.py\""
+command = "python3 \"$HOME/.codex/skills/harness/hooks/reflect-on-stop.py\""
 timeout = 10
 ```
 
-> Hook 执行模型：同一事件的多个 Hook 并行执行，互相独立。`harness-stop.py` 和 `self-reflect-stop.py` 分别对 `stop` 事件注册，不会冲突。
+> Hook 执行模型：同一事件的多个 Hook 并行执行，互相独立。`harness-stop.py` 和 `reflect-on-stop.py` 分别对 `stop` 事件注册，不会冲突。
 
 ### 3. 信任项目目录（如使用项目级配置）
 
