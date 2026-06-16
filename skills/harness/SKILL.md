@@ -2,31 +2,6 @@
 name: harness
 version: 2.0.0
 description: "This skill should be used for multi-session autonomous agent work requiring progress checkpointing, failure recovery, and task dependency management. Triggers on '/harness' command, or when a task involves many subtasks needing progress persistence, sleep/resume cycles across context windows, recovery from mid-task failures with partial state, or distributed work across multiple agent sessions. Synthesized from Anthropic and OpenAI engineering practices for long-running agents."
-hooks:
-  Stop:
-    - hooks:
-        - type: command
-          command: "python3 \"$HOME/.codex/skills/harness/hooks/harness-stop.py\""
-          timeout: 10
-        - type: command
-          command: "python3 \"$HOME/.codex/skills/harness/hooks/reflect-on-stop.py\""
-          timeout: 10
-  SessionStart:
-    - matcher: "startup|resume|compact"
-      hooks:
-        - type: command
-          command: "python3 \"$HOME/.codex/skills/harness/hooks/harness-sessionstart.py\""
-          timeout: 10
-  TeammateIdle:
-    - hooks:
-        - type: command
-          command: "python3 \"$HOME/.codex/skills/harness/hooks/harness-teammateidle.py\""
-          timeout: 10
-  SubagentStop:
-    - hooks:
-        - type: command
-          command: "python3 \"$HOME/.codex/skills/harness/hooks/harness-subagentstop.py\""
-          timeout: 10
 ---
 
 # Harness — Long-Running Agent Framework
