@@ -1,0 +1,8 @@
+{
+  "name": "stellarlinkco-skills",
+  "skills": [
+    "./skills/harness",
+    "./skills/code-review",
+    "./skills/self-evolution"
+  ]
+}

@@ -1,5 +1,6 @@
 ---
 name: self-evolution
+version: 4.0.0
 description: >
   Iteratively evolve any measurable artifact (prompt, skill, code, idea, configuration,
   document, benchmarked experiment) through autonomous mutation-evaluate-gate loops.

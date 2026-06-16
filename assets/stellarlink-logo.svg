@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title" viewBox="0 0 1536 1024">
+  <title id="title">Stellarlink</title>
+  <rect width="1536" height="1024" fill="#fff"/>
+  <text
+    x="768"
+    y="552"
+    fill="#000"
+    font-family="Inter, ui-rounded, Avenir Next, Helvetica Neue, Arial, sans-serif"
+    font-size="212"
+    font-weight="500"
+    letter-spacing="2"
+    text-anchor="middle"
+    dominant-baseline="middle">Stellarlink</text>
+</svg>
