@@ -22,7 +22,7 @@ npx skills@latest add stellarlinkco/skills
 
 Then call the skill you need from your agent:
 ```text
-/harness implement prd.md 完成之后自检、测试、修复、再测试
+/harness implement prd.md; loop verify, fix, retest
 ```
 
 For manual installs, copy the skill directory you need from [`skills/`](./skills/) into your agent's skills directory. `harness` also needs hook registration; see [`skills/harness/README.md`](./skills/harness/README.md).
